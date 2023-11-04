@@ -3,8 +3,15 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'imageviewer';
+  previews = [
+    { url: '../../assets/images/defaultPreview.png' },
+    { url: '../../assets/images/defaultPreview.png' },
+    { url: '../../assets/images/defaultPreview.png' },
+    { url: '../../assets/images/defaultPreview.png' },
+    { url: '../../assets/images/defaultPreview.png' },
+    { url: '../../assets/images/defaultPreview.png' },
+  ];
 }
