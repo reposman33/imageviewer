@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './image-upload.component.html',
   styleUrls: ['./image-upload.component.css'],
 })
-export class ImageUploadComponent {}
+export class ImageUploadComponent {
+  handleUpload(event: HTMLInputElement) {}
+}

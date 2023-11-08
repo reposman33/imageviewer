@@ -5,11 +5,12 @@
     aria-describedby="file_input_help"
     id="file_input"
     type="file"
+    #event
   />
   <p class="input__hint" id="file_input_help">
     SVG, PNG, JPG or GIF (MAX. 800x400px).
   </p>
   <div class="flex justify-start">
-    <button class="button__ok ml-3">OK</button>
+    <button class="button__ok ml-3" (click)="handleUpload(event)">OK</button>
   </div>
 </div>
