@@ -58,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "imageviewer:build:production"
+              "buildTarget": "imageviewer:build:production"
             },
             "development": {
-              "browserTarget": "imageviewer:build:development"
+              "buildTarget": "imageviewer:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "imageviewer:build"
+            "buildTarget": "imageviewer:build"
           }
         },
         "test": {
