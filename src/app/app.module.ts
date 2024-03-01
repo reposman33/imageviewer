@@ -8,6 +8,7 @@ import { ImageUploadComponent } from './image-upload/image-upload.component';
 import { ImagePreviewComponent } from './image-preview/image-preview.component';
 import { ImageComponent } from './image/image.component';
 import { ApiService } from './shared/api.service';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { ApiService } from './shared/api.service';
     ImagePreviewComponent,
     ImageComponent,
   ],
-  imports: [BrowserModule, FormsModule, HttpClientModule],
+  imports: [BrowserModule, FormsModule, MatGridListModule],
   providers: [ApiService],
   bootstrap: [AppComponent],
 })
