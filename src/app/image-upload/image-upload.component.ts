@@ -12,20 +12,17 @@ export class ImageUploadComponent {
   fileName: string = '';
   httpPostResponse = '';
 
-  constructor(private uploadService: ApiService) {}
+  constructor(private apiService: ApiService) {}
 
-  onSelectFile(e: Event): void {
+  handleUpload(e: Event) {
     const element = e.target as HTMLInputElement;
     const selectedFile = element.files![0];
     this.fileName = selectedFile.name;
-    this.handleUpload(selectedFile);
-  }
-
-  handleUpload(selectedFile: File) {
-    if (selectedFile) {
-      this.uploadService
-        .uploadFile(selectedFile)
-        .subscribe((res) => (this.httpPostResponse = res));
+    if (this.fileName) {
+      this.apiService.uploadFile(selectedFile).subscribe((res) => {
+        this.httpPostResponse = res;
+        this.apiService.getFiles();
+      });
     }
   }
 }
