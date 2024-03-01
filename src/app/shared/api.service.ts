@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class UploadService {
+export class ApiService {
   selectedFiles?: FileList;
   api = { fileupload: 'http://localhost:3000/file-upload/' };
 

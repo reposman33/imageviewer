@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { ImageUploadComponent } from './image-upload/image-upload.component';
 import { ImagePreviewComponent } from './image-preview/image-preview.component';
 import { ImageComponent } from './image/image.component';
-import { UploadService } from './shared/upload.service';
+import { ApiService } from './shared/api.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { UploadService } from './shared/upload.service';
     ImageComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule],
-  providers: [UploadService],
+  providers: [ApiService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

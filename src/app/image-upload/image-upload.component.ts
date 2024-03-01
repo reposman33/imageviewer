@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { UploadService } from '../shared/upload.service';
+import { ApiService } from '../shared/api.service';
 import { EventType } from '@angular/router';
 
 @Component({
@@ -12,7 +12,7 @@ export class ImageUploadComponent {
   fileName: string = '';
   httpPostResponse = '';
 
-  constructor(private uploadService: UploadService) {}
+  constructor(private uploadService: ApiService) {}
 
   onSelectFile(e: Event): void {
     const element = e.target as HTMLInputElement;
