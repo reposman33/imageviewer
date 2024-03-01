@@ -11,7 +11,7 @@
   }
 
   .input__file {
-    @apply block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none;
+    @apply block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer  dark:text-gray-400;
   }
   .input__file:dark {
     @apply bg-gray-700 border-gray-600 placeholder-gray-400;
