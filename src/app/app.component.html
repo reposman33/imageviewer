@@ -1,15 +1,13 @@
-<mat-grid-list cols="7">
-  <mat-grid-tile colspan="7" class="m-auto">
+<mat-grid-list cols="7" class="w-screen">
+  <mat-grid-tile colspan="7" class="m-auto w-auto">
     <app-image-upload></app-image-upload>
   </mat-grid-tile>
 
-  <hr />
-
-  <div class="flex justify-start overflow-x-auto mt-3">
-    <ul class="inline-block">
-      <li *ngFor="let preview of previews" class="float-left mx-3">
-        <app-image-preview [url]="preview.url"></app-image-preview>
-      </li>
-    </ul>
-  </div>
+  @for(preview of previews; track preview.url; let i = $index) {
+  <mat-grid-tile class="mr-3 bg-blue-50 shadow-lg" colspan="1">
+    <app-image-preview [url]="preview.url"></app-image-preview>
+  </mat-grid-tile>
+  } @empty{
+  <p>...</p>
+  }
 </mat-grid-list>
