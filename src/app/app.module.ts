@@ -17,7 +17,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     ImagePreviewComponent,
     ImageComponent,
   ],
-  imports: [BrowserModule, FormsModule, MatGridListModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule, MatGridListModule],
   providers: [ApiService],
   bootstrap: [AppComponent],
 })
