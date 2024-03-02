@@ -19,5 +19,6 @@ export class AppComponent implements OnInit {
           url: `http://localhost:3000/${fileName}`,
         })))
     );
+    this.apiService.getFiles();
   }
 }
