@@ -8,7 +8,7 @@ describe('ImagePreviewComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ImagePreviewComponent]
+      declarations: [ImagePreviewComponent],
     });
     fixture = TestBed.createComponent(ImagePreviewComponent);
     component = fixture.componentInstance;
